@@ -16,7 +16,8 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - dotnet build -c Release ./DotnetCoreAppForAWS/DotnetCoreAppForAWS.csproj      
+      #- dotnet build -c Release ./DotnetCoreAppForAWS/DotnetCoreAppForAWS.csproj      
+      - dotnet publish -c release -o ./build_output ./DotnetCoreAppForAWS/DotnetCoreAppForAWS.csproj
       
   post_build:
     commands:
@@ -26,4 +27,6 @@ phases:
       
 artifacts:
   files:
-    - ./**/*
+    - CodeBuild-DotnetCoreAppForAWS/build_output/**/*
+    - scripts/**/*
+    - appspec.yml
