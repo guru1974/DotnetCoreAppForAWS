@@ -27,6 +27,6 @@ phases:
       
 artifacts:
   files:
-    - CodeBuild-DotnetCoreAppForAWS/build_output/**/*
+    - ./DotnetCoreAppForAWS/build_output/**/*
     - scripts/**/*
     - appspec.yml
