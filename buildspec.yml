@@ -29,4 +29,3 @@ artifacts:
   files:
     - ./DotnetCoreAppForAWS/build_output/**/*
     - scripts/**/*
-    - appspec.yml
