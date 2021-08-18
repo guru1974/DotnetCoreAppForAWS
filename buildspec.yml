@@ -17,7 +17,7 @@ phases:
     commands:
       - echo Build started on `date`
       #- dotnet build -c Release ./DotnetCoreAppForAWS/DotnetCoreAppForAWS.csproj      
-      - dotnet publish -r linux-x64 --selfcontained false -c release -o ./build_output ./DotnetCoreAppForAWS/DotnetCoreAppForAWS.csproj
+      - dotnet publish -c release -o ./build_output ./DotnetCoreAppForAWS/DotnetCoreAppForAWS.csproj
       
   post_build:
     commands:
