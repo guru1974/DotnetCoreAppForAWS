@@ -25,6 +25,7 @@ phases:
       
 artifacts:
   files:
-    - '*/**'
-  base-directory: /bin/Release/netcoreapp3.1/linux-x64/publish/
-  discard-paths: no
+    - \bin\Release\netcoreapp3.1\linux-x64\publish\**\*
+    - \bin\Release\netcoreapp3.1\linux-x64\publish\*
+  #base-directory: 
+  #discard-paths: no
